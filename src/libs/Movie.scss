@@ -1,0 +1,47 @@
+.movie_Container{
+    width:230px;
+    height: 345px;
+    padding: 10px;
+    margin: 50px 0 0 5px;
+    cursor: pointer;
+    position:relative;
+    
+
+    .cover_Info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        background: rgba(148, 153, 156, 0.4);
+        width:230px;
+        height: 345px;
+        top:10px;
+        left:10px;
+        padding:10px;
+        opacity: 0;
+        transition: opacity .4s ease-in-out;
+    }
+
+    .film_Name{
+        transition: opacity .4s ease-in-out;
+        opacity:0;
+    }
+    &:hover .film_Name{opacity: 1;}
+
+    &:hover .cover_Info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        background: rgba(148, 153, 156, 0.4);
+        width:230px;
+        height: 345px;
+        top:10px;
+        left:10px;
+        padding:10px;
+        opacity: 1;
+        
+    }
+}

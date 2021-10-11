@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState,useEffect} from 'react';
+import HightBar from './Components/HightBar';
+import axios,{AxiosResponse} from 'axios';
+import { IMovie } from './types/types';
+import Movie from './Components/Movie'
 
-function App() {
+
+
+
+
+
+const App:React.FC = () => {
+
+  const [films,setFilms] = useState<IMovie[]>([])
+  const URL:string = `https://yts.mx/api/v2/list_movies.json?page=1`;
+
+  useEffect(()=>getMovies(),[])
+
+  const getMovies = () => {
+  axios.get(URL).then(({data}:AxiosResponse<any>)=>setFilms(data.data.movies))
+}
+
+console.log(films)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <HightBar/>
+     <div className='movieList'> 
+       {films.map((item,idx)=><Movie key={idx}  {...item}/>)}
+     </div>
     </div>
   );
 }
