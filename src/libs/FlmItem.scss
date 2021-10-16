@@ -1,0 +1,9 @@
+.movieContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 35px;
+
+  &_info {
+    padding-left: 15px;
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { IMovie } from '../types/types'
+import {Link} from 'react-router-dom'
 
 const Movie:React.FC<IMovie> = (props) => {
     return (
@@ -11,7 +12,7 @@ const Movie:React.FC<IMovie> = (props) => {
                     <div><ul>{props.genres 
                      ? props.genres.map((el)=> <li>{el}</li>)
                      : "Unknown"}</ul></div>
-                    <div><button>More</button></div>
+                    <div><Link to={`/movieDetails/${props.id}`} >More</Link></div>
                 </div>
                 <div className='film_Name'>{props.title}</div>
                        

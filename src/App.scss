@@ -1,13 +1,14 @@
-@import './libs/HightBar.scss';
-@import './libs/Movie.scss';
+@import "./libs/HightBar.scss";
+@import "./libs/Movie.scss";
+@import "./libs/FlmItem.scss";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.movieList{
+.movieList {
   width: 95%;
   display: flex;
   flex-wrap: wrap;

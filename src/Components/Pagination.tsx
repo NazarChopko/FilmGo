@@ -1,20 +1,26 @@
 import { Pagination } from 'antd';
-import React, {useState} from 'react'
+import React, {Dispatch, SetStateAction, useState} from 'react'
 
-const PaginationMenu = ({setPage,page}:any) => {
 
- const [current,setCurrent] = useState<number>(page);
+interface IPaginationMenu{
+    currentPage:number
+    setCurrentPage:Dispatch<SetStateAction<number>>
+}
+
+const PaginationMenu:React.FC<IPaginationMenu> = ({setCurrentPage,currentPage}) => {
+
+ const [current,setCurrent] = useState<number>(currentPage);
  
   
  
- const paginationHandler = (e:any) =>{
+ const paginationHandler = (e:number) =>{
     setCurrent(e);
-    setPage(e);
+    setCurrentPage(e)
 }
   
 return (
         <div>
-            <Pagination current={current} onChange={paginationHandler} showSizeChanger={false} total={100} />;
+            <Pagination current={current} onChange={paginationHandler} showSizeChanger={false} total={10000} />;
         </div>
     )
 }
