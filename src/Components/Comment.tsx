@@ -61,28 +61,10 @@ const Editor:FC<IEditorProps> = ({ onChange, onSubmit, submitting, value }) => (
 
 
 export const AddComment:FC = () => {
-    // const initialComments:any = JSON.parse(localStorage.getItem('Comments') as any);
     const [submitting,setSubmitting] = useState<boolean>(false)
     const [value,setValue] = useState<string>()
     const [comments,setComments] = useState<IComents[]>([]);
 
-// const getCircularReplacer = () => {
-//   const seen = new WeakSet();
-//   return (key:any, value:any) => {
-//   if (typeof value === "object" && value !== null) {
-//       if (seen.has(value)) {
-//           return;
-//       }
-//       seen.add(value);
-//   }
-//   return value;
-//   };
-// };
-    
-
-//     useEffect(() => {
-//       localStorage.setItem('Comments',JSON.stringify(comments,getCircularReplacer()));
-//     }, [comments,setComments])
 
     const handleSubmit = () => {
         if (!value) {
