@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/NazarChopko/FilmGo/static/css/main.b22ea270.chunk.css",
+    "main.js": "/NazarChopko/FilmGo/static/js/main.8844a5a6.chunk.js",
+    "main.js.map": "/NazarChopko/FilmGo/static/js/main.8844a5a6.chunk.js.map",
+    "runtime-main.js": "/NazarChopko/FilmGo/static/js/runtime-main.56e2ed9e.js",
+    "runtime-main.js.map": "/NazarChopko/FilmGo/static/js/runtime-main.56e2ed9e.js.map",
+    "static/css/2.19232b41.chunk.css": "/NazarChopko/FilmGo/static/css/2.19232b41.chunk.css",
+    "static/js/2.f19296da.chunk.js": "/NazarChopko/FilmGo/static/js/2.f19296da.chunk.js",
+    "static/js/2.f19296da.chunk.js.map": "/NazarChopko/FilmGo/static/js/2.f19296da.chunk.js.map",
+    "index.html": "/NazarChopko/FilmGo/index.html",
+    "static/css/2.19232b41.chunk.css.map": "/NazarChopko/FilmGo/static/css/2.19232b41.chunk.css.map",
+    "static/css/main.b22ea270.chunk.css.map": "/NazarChopko/FilmGo/static/css/main.b22ea270.chunk.css.map",
+    "static/js/2.f19296da.chunk.js.LICENSE.txt": "/NazarChopko/FilmGo/static/js/2.f19296da.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56e2ed9e.js",
+    "static/css/2.19232b41.chunk.css",
+    "static/js/2.f19296da.chunk.js",
+    "static/css/main.b22ea270.chunk.css",
+    "static/js/main.8844a5a6.chunk.js"
+  ]
+}
