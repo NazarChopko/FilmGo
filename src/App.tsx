@@ -30,9 +30,11 @@ const App:React.FC = () => {
       })
     }
       catch(e){
-          console.error(e)
+          console.error(e,'dupa')
       }
     }
+
+    console.log(films)
   
   return (
     <div className="App">

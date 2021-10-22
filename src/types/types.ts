@@ -6,7 +6,7 @@ export interface IMovie{
     runtime:number
     title:string 
     year:number 
-    medium_cover_image:string
+    medium_cover_image:string | any
     genres?:string[]
     large_cover_image?:string
 }
@@ -35,13 +35,7 @@ export interface IDataGetResponseMovie{
     status_message:string
 }
 
-
-
-// export interface IGetMoviesResponse {
-//     config:Object
-//     data:IData
-//     headers:Object
-//     request:Object
-//     status:number
-//     statusText:string
-// }
+export interface ICommentUser{
+    date:Date
+    comment:string
+}

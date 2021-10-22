@@ -1,0 +1,23 @@
+.ant-pagination{
+    display: block !important;
+    padding: 13px 7px 0 0  !important;
+    li{
+        background:#464646;
+        border-radius: 10px;
+
+        button{
+            border-radius: 10px !important;
+            background:#464646 !important;
+        }
+
+        span{
+            color:#B1AAA9;
+        }
+
+        a{
+            color:#B1AAA9;
+
+        }
+    }
+    
+}

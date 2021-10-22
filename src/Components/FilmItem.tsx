@@ -1,7 +1,13 @@
 import axios from 'axios'
 import React, {useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
+import {StarFilled} from '@ant-design/icons';
+
+
 import { IDataGetResponseMovie, IMovie } from '../types/types'
+import { AddComment } from './Comment';
+
+
 
 const FilmItem:React.FC = () => {
 
@@ -31,19 +37,25 @@ const FilmItem:React.FC = () => {
     return (
         <div className='movieContainer'>
             <div className='movieContainer_image'>
+                {<div className='coverFilmRaiting'><span><StarFilled className='iconStar' style={{fontSize:'30px',color:'#1B69F5'}}/> {movieDetails?.rating}</span></div>}
                 {<img src={movieDetails?.large_cover_image}/>}
             </div>
             <div className='movieContainer_info'>
                 <div className='title'>
                     <h1>{movieDetails?.title}</h1>
                     <p>{movieDetails?.year}</p>
-                    <div>{movieDetails?.genres?.map((el)=><span>----{el}</span>)}</div>
+                    <div>{movieDetails?.genres?.map((el)=><span>● {el} </span>)}</div>
                 </div>
                 <div className='description'>
-                    <h2>Description</h2>
+                    <h1>Description</h1>
                     <p>{movieDetails?.description_full}</p>
                 </div>
-                <div><h1>Comments</h1></div>
+                <div className='comments'>
+                    <h1>Comments</h1>
+                    <div className='comments-container'>
+                       <AddComment/>
+                    </div>
+                </div>
                 
             </div>
            

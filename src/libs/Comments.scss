@@ -1,0 +1,57 @@
+.comments-container{
+
+    width:600px;
+    .ant-list-header{
+        color:white;
+    }
+    .ant-spin-nested-loading{
+        width:600px;
+        
+
+        .ant-spin-container{
+
+            .ant-list-items{
+
+                .ant-comment{
+                    position: relative;
+                    background-color: #B1AAA9;
+                    padding: 0 10px 0 10px;
+                    border-radius: 8px;
+                    margin-top: 20px;
+                    color:white;
+
+                }
+
+            }
+        }
+
+        
+    }
+
+    .ant-comment{
+        // background-color: #292929;
+        button,img{
+            background-color: #B1AAA9  ;
+        }
+
+        button:hover{
+            background-color: #2479D5;
+        }
+        
+
+        &-inner{
+            .ant-comment-content{
+                .anticon-delete{
+                    position:absolute;
+                    top:2px;
+                    right: 5px;
+                    color:white;
+
+                    &:hover{
+                        color:#2479D5;
+                    }
+                }
+            }
+        }
+    }
+}
